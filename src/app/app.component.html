@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals Map</title>
+    <!--Rubik Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Main css Link-->
+    <link rel="stylesheet" href="app.component.css">
+    <!--Leaflet JS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+</head>
+<body>
+    <h3>Deals by country </h3>
+    <button class="button" (click)="viewReport()"><b>View report</b></button>
+    <div id="map" class="map-container"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin="">
+    </script>
+    <div class="split first">
+      <div class="centered">
+        <div class="circle column" style="background: #d5e733;">1</div>
+        <span>UK </span>
+        <span style="font-size: 12px;"> {{UK_deals}}</span>
+      </div>
+    </div>
+    <div class="split second">
+      <div class="centered">
+        <div class="circle column"  style="background: rgb(77, 199, 84);">2</div>
+        <span>USA </span>
+        <span style="font-size: 12px;"> {{USA_deals}}</span>
+      </div>
+    </div>
+    <div class="split third">
+      <div class="centered">
+        <div class="circle column" style="background: rgb(76, 76, 230);">3</div>
+        <span>India </span>
+        <span style="font-size: 12px;"> {{India_deals}}</span>
+      </div>
+    </div>
+    <div class="split fourth">
+      <div class="centered">
+        <div class="circle column" style="background: blue;">4</div>
+        <span>Australia </span>
+        <span style="font-size: 12px;"> {{Australia_deals}}</span>
+      </div>
+    </div>
+</body>
+</html>
